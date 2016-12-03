@@ -1,1 +1,17 @@
 <h1>New Location</h1>
+
+<%= form_for :location do |f| %>
+  <p>
+    <%= f.label :place %><br>
+    <%= f.text_field :place %>
+  </p>
+
+  <p>
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </p>
+
+  <p>
+    <% f.submit %>
+  </p>
+<% end %>
